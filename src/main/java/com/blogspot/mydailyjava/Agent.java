@@ -20,7 +20,7 @@ public class Agent {
         try {
             ClassReader classReader = new ClassReader(AccessibleObject.class.getName());
             ClassWriter classWriter = new ClassWriter(classReader, 0);
-            String descriptor = Type.getMethodDescriptor(Type.getType(void.class), Type.getType(Class.class), Type.getType(Class.class));
+            final String descriptor = Type.getMethodDescriptor(Type.getType(void.class), Type.getType(Class.class), Type.getType(Class.class));
             classReader.accept(new ClassVisitor(Opcodes.ASM6, classWriter) {
                 @Override
                 public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {

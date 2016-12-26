@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>no.blogspot.mydailyjava</groupId>
+    <groupId>com.blogspot.mydailyjava</groupId>
     <artifactId>reflection-reset</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -106,7 +106,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>org.objectweb.asm</pattern>
-                                    <shadedPattern>no.blogspot.mydailyjava.asm</shadedPattern>
+                                    <shadedPattern>com.blogspot.mydailyjava.asm</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -126,8 +126,8 @@
                 </executions>
                 <configuration>
                     <instructions>
-                        <Premain-Class>no.blogspot.mydailyjava.Agent</Premain-Class>
-                        <Agent-Class>no.blogspot.mydailyjava.Agent</Agent-Class>
+                        <Premain-Class>com.blogspot.mydailyjava.Agent</Premain-Class>
+                        <Agent-Class>com.blogspot.mydailyjava.Agent</Agent-Class>
                     </instructions>
                 </configuration>
             </plugin>

@@ -1,4 +1,4 @@
-package no.blogspot.mydailyjava;
+package com.blogspot.mydailyjava;
 
 import org.objectweb.asm.*;
 
